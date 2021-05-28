@@ -1,0 +1,110 @@
+/* What we do */
+.about-us {
+  display: flex;
+  justify-content: center;
+  height: 694px;
+}
+
+.about-us_main{
+  width: 100%;
+  height: 474px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-us_content {
+  width: 100%;
+  height: 184px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about-us_title {
+  color: var(--color-back);
+  font-size: var(--font-size-x-large);
+}
+
+.about-us__text {
+  color: var(--color-back);
+}
+
+
+.about-us_element {
+  padding: 20px;
+}
+.frecuency {
+  width: 94px;
+  height: 65px;
+}
+
+.video {
+  width: 68px;
+  height: 77px;
+}
+
+.music {
+  width: 52px;
+  height: 57px;
+}
+
+.ear {
+  width: 61px;
+  height: 61px;
+}
+
+
+
+
+
+
+/* products */
+.result {
+  background: url(images/headphones_hero_2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 650px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+.footer {
+  background: var(--color-back);
+  width: 100%;
+  height: 249px;
+  text-align: center;
+}
+.footer_content {
+  width: 100%;
+  height: 110px;
+  margin: 90px 0 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer_logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.social_logos a:hover {
+  color: var(--color-primary);
+}
+.size {
+  margin: 0 7px;
+}
