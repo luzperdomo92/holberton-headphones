@@ -20,7 +20,7 @@
 /* Base Variables*/
 :root {
   --color-white: #fff;
-  --color-back: #071629;
+  --color-black: #071629;
   --color-primary: #FF6565;
   --font-family-base: 'Source Sans Pro', sans-serif;
 
@@ -115,6 +115,18 @@ text-transform: uppercase;
   width: 161px;
   height: 32px;
 }
+
+
+/*--- Flex Items ---*/
+.flex-items {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+
 
 
 
@@ -255,6 +267,8 @@ text-transform: uppercase;
   justify-content: center;
   position: relative;
   padding: 20rem 2rem 7rem 2rem;
+
+  /*15rem 2rem 10rem 2rem;*/
 }
 
 .hero_title {
@@ -277,8 +291,222 @@ text-transform: uppercase;
 }
 
 
+/* what we do */
+.about-us_main {
+  color: var(--color-black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6.9rem 0
+}
+
+.about-us_content{
+  margin: 0 0 6rem 0;
+}
+    
+.about-us_title {
+  color: var(--color-black);
+  font-size: var(--font-size-x-large);
+  margin: 0 0 2.5rem;
+}
+
+.about-us_element {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 207px;
+  height: 193px;
+}
+
+.frecuency {
+  width: 94px;
+  height: 65px;
+  margin: 0 0 13px 0;
+}
+
+.video {
+  width: 68px;
+  height: 77px;
+}
+
+.music {
+  width: 52px;
+  height: 57px;
+  margin: 0 0 14px 0;
+}
+
+.ear {
+  width: 61px;
+  height: 61px;
+  margin: 0 0 13px 0;
+}
+
+.about-us_element_title {
+  font-size: var(--font-size-large);
+}
+
+.about-us_element_text {
+  font-size: var(--font-size-small);
+}
 
 
+
+/* products */
+.result {
+  background: url(images/headphones_hero_2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+.result_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8.8rem 0 4.9rem 0;
+}
+
+.result_content {
+  margin: 0 0 3.5rem 0;
+}
+
+.result_title {
+  font-size: var(--font-size-x-large);
+  font-weight: var(--font-weight-regular);
+  margin: 0 0 2.5rem 0;
+}
+
+.result_text {
+  line-height: 26px;
+}
+
+.result_element {
+  display: grid;
+  padding: 0 20px;
+}
+
+.pentan_bg {
+  grid-area: 1/1;
+}
+
+.pentagon {
+  width: 180.7px;
+  height: 171.86px;
+}
+
+.pentan_bg {
+  grid-area: 1/1;
+}
+
+.pentan_content {
+  display: flex;
+  flex-direction: column;
+  grid-area: 1/1;
+  z-index: 2;
+}
+
+.pentan_title {
+  font-size: var(--font-size-xx-large);
+  line-height: 26px;
+  font-weight: var(--font-weight-bold);
+  margin: 20px 0 20px 0;
+  padding: 47px 0 0 0;
+}
+
+.pentant_text {
+  font-size: var(--font-size-small);
+}
+
+
+
+/* Contac Us */
+
+.contact-us {
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  width: 335px;
+  padding: 6.8rem 0 8.1rem 0;
+  text-align: center;
+}
+
+.form_title {
+  margin: 0 0 3.5rem 0;
+  color: var(--color-black);
+  font-size: var(--font-size-x-large);
+}
+
+.form_user {
+  text-align : left;
+  font-weight: var(--font-weight-bold);
+}
+
+.form_user-label {
+  color: var(--color-black);
+  font-size: var(--font-size-small);
+}
+
+.form_input {
+  margin-bottom: 3.8rem;
+  border       : none;
+  border-bottom: 1px solid #071629;
+  outline      : none;
+  background   : transparent;
+  width        : 100%;
+  opacity: 0.17;
+}
+
+.form_email {
+  text-align : left;
+  font-weight: var(--font-weight-bold);
+}
+
+.form_message {
+  text-align : left;
+  font-weight: var(--font-weight-bold);
+}
+
+
+
+/* footer */
+.footer {
+  background: var(--color-black);
+  width: 100%;
+  text-align: center;
+}
+.footer_content {
+  width: 100%;
+  margin: 5.7rem 0 2.4rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer_logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4.4rem;
+}
+
+
+.social_logos a:hover {
+  color: var(--color-primary);
+}
+.size {
+  margin: 0 7px;
+}
+
+.footer_text {
+  opacity: 0.35;
+}
 
 /*========== Media Queries ============*/
 
@@ -290,12 +518,28 @@ text-transform: uppercase;
   .container {
     max-width: 850px;
   }
+  .result_element {
+    padding: 0;
+  }
 }
 
 
 @media(max-width: 768px){
   .container {
     max-width: 637px;
+  }
+  .flex-items {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .margin {
+  margin-bottom: 5rem;
+  }
+  .result_element {
+    padding: 0 20px;
+  }
+  .margin-result {
+    margin: 0 0 2.6rem 0;
   }
 }
 
@@ -329,6 +573,20 @@ text-transform: uppercase;
     overflow: hidden;
     max-height: 0;
     transition: max-height .2s ease-out;
+  }
+  .about-us_element {
+    margin-bottom: 5rem;
+  }
+
+  .result_element {
+    margin-bottom: 2.6rem;
+  }
+
+  .footer_logos {
+    flex-direction: column;
+  }
+  .logo {
+    margin-bottom: 2.8rem;
   }
 }
 

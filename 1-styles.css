@@ -117,6 +117,18 @@ text-transform: uppercase;
 }
 
 
+/*--- Flex Items ---*/
+.flex-items {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+
+
+
 
 /* Header */
 .header {
@@ -255,6 +267,8 @@ text-transform: uppercase;
   justify-content: center;
   position: relative;
   padding: 20rem 2rem 7rem 2rem;
+
+  /*15rem 2rem 10rem 2rem;*/
 }
 
 .hero_title {
@@ -277,7 +291,65 @@ text-transform: uppercase;
 }
 
 
+/* what we do */
+.about-us_main {
+  color: var(--color-back);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6.9rem 0
+}
 
+.about-us_content{
+  margin: 0 0 6rem 0;
+}
+    
+.about-us_title {
+  color: var(--color-back);
+  font-size: var(--font-size-x-large);
+  margin: 0 0 2.5rem;
+}
+
+.about-us_element {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 207px;
+  height: 193px;
+}
+
+.frecuency {
+  width: 94px;
+  height: 65px;
+  margin: 0 0 13px 0;
+}
+
+.video {
+  width: 68px;
+  height: 77px;
+}
+
+.music {
+  width: 52px;
+  height: 57px;
+  margin: 0 0 14px 0;
+}
+
+.ear {
+  width: 61px;
+  height: 61px;
+  margin: 0 0 13px 0;
+}
+
+.about-us_element_title {
+  font-size: var(--font-size-large);
+}
+
+.about-us_element_text {
+  font-size: var(--font-size-small);
+}
 
 
 /*========== Media Queries ============*/
@@ -296,6 +368,13 @@ text-transform: uppercase;
 @media(max-width: 768px){
   .container {
     max-width: 637px;
+  }
+  .flex-items {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .margin {
+  margin-bottom: 5rem;
   }
 }
 
@@ -329,6 +408,9 @@ text-transform: uppercase;
     overflow: hidden;
     max-height: 0;
     transition: max-height .2s ease-out;
+  }
+  .about-us_element {
+    margin-bottom: 5rem;
   }
 }
 
