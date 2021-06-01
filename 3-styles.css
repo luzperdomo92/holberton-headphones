@@ -399,10 +399,6 @@ text-transform: uppercase;
   height: 171.86px;
 }
 
-.pentan_bg {
-  grid-area: 1/1;
-}
-
 .pentan_content {
   display: flex;
   flex-direction: column;
